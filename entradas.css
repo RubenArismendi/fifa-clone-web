@@ -4,7 +4,12 @@
 
 body{
     margin: 0;
-    background-color: #0a0a23;
+    background-color: #020f2a;
+}
+
+.espacio-vacio{
+    width: 100%;
+    height: 91px;
 }
 
 .header-container{
@@ -16,8 +21,13 @@ body{
     margin-left: 68%;
     padding-top: 5px;
     padding-bottom: 5px;
+  
 }
-
+.contenedor{
+    position: fixed;
+  z-index: 100;
+  width: 100%;
+}
 .header-container a{
     color: white;
     text-decoration: none;
@@ -123,8 +133,9 @@ body{
 }
 
 .right-padre{
-  background-image: url("https://digitalhub.fifa.com/transform/1ede86c3-c488-416d-83de-ccd8b9ce93f3/1920-live-stream-hero?io=transform:fill,height:868,width:1536&quality=75");
-  background-size: cover;
+    background-image: url("https://digitalhub.fifa.com/transform/1ede86c3-c488-416d-83de-ccd8b9ce93f3/1920-live-stream-hero?io=transform:fill,height:868,width:1536&quality=75");
+    background-size: cover;
+    cursor: pointer;
 }
 
 .left b{
@@ -153,6 +164,7 @@ body{
     padding-right: 48px;
     border-radius: 20px;
     font-size: 12px;
+    cursor: pointer;
 }
 .main-button{
     margin-left:18%;
@@ -184,6 +196,9 @@ body{
 .cards-section-container{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    gap: 18px;
+    margin-top: 10px;
+    margin-bottom: 60px;
 }
 
 .cards-section{
@@ -199,11 +214,206 @@ body{
 
 .cards-section a{
     color: grey;
-    font-size: 11px;
+    font-size: 12px;
     display: inline;
-    margin-left: 78%;
+    margin-left: 74%;
 }
 
 .cards-section a:hover{
     color: white;
+    cursor: pointer;
+}
+
+.card-paris-2024{
+    width: 50%;
+    height: 8%;
+    margin-top: 12px;
+    cursor: pointer;
+    margin-bottom: 60px;
+}
+
+.card-paris-2024 img{
+    width: 100%;
+    height: 100%;
+    border-radius: 12px;
+}
+
+.card-paris-2024 p{
+    font-size: 14px;
+    padding-top: 14px;
+}
+
+.cards{
+    height: 74%;
+    width: 97%;
+}
+.cards img{
+    border-radius: 12px;
+    width: 100%;
+    height: 100%;
+}
+
+.cards p{
+    font-size: 14px;
+}
+/*css de cards paris 2024 hasta esta linea de codigo*/
+
+.carrusel-cards-container {
+    position: relative;
+    margin-top: 26px;
+}
+.carrusel-cards{
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    margin-top: 10px;
+}
+.slide-open:checked + .slide-item-1 {
+    position: static;                                  
+    opacity: 100;
+}
+.slide-item-1{
+    position: absolute;
+    opacity: 0;
+    -webkit-transition: opacity 1.5s ease-out;
+    transition: opacity 1.5s ease-out;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+    gap: 11px;
+}
+
+.slide-control {
+   
+    border-radius: 50%;
+    color: #428bca;
+    display: none;
+    font-size: 70px;
+    height: 40px;
+    line-height: 35px;
+    position: absolute;
+    top: 40%;
+    -webkit-transform: translate(0, -50%);
+    cursor: pointer;
+    -ms-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+    text-align: center;
+    z-index: 10;
+}
+.slide-control.prev {
+    left: 2%;
+}
+.slide-control.next {
+    right: 2%;
+}
+.slide-control:hover {
+    color: #3b7bb3;
+}
+#slide-1:checked ~ .control-1,
+#slide-2:checked ~ .control-2,
+#slide-3:checked ~ .control-3 {
+    display: block;
+}
+
+.slide-circulo {
+    color: #828282;
+    cursor: pointer;
+    display: block;
+    font-size: 35px;
+}
+.slide-circulo:hover {
+    color: #aaaaaa;
+}
+#slide-1:checked ~ .control-1 ~ .slide-indicador 
+     li:nth-child(1) .slide-circulo,
+#slide-2:checked ~ .control-2 ~ .slide-indicador 
+      li:nth-child(2) .slide-circulo,
+#slide-3:checked ~ .control-3 ~ .slide-indicador 
+      li:nth-child(3) .slide-circulo {
+    color: #428bca;
+}
+#titulo {
+    width: 100%;
+    position: absolute;
+    padding: 0px;
+    margin: 0px auto;
+    text-align: center;
+    font-size: 27px;
+    color: rgba(255, 255, 255, 1);
+    font-family: 'Open Sans', sans-serif;
+    z-index: 9999;
+    text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.33), 
+         -1px 0px 2px rgba(255, 255, 255, 0);
+}
+  /*fin estilos del carrusel de cards*/
+
+.noticias-section{
+    margin-left: 35px;
+    margin-right: 35px;
+    padding-top: 30px;
+    
+}
+
+.noticias{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 10px;
+}
+
+.left-noticias h2{
+      color: white;
+      font-size: 24px;
+      margin-top: 10px;
+      display: inline;
+}
+.left-noticias p{
+    color: white;
+    font-size: 14px;
+    margin-top: 10px;
+}
+.left-noticias img{
+    width: 95%;
+    height: 60%;
+    border-radius: 10px;
+}
+
+.noticias-info{
+    width: 80%;
+    display: inline-block;
+}
+
+.noticias-info-icono{
+    color: white;
+    font-size: 20px;
+    display: inline-block;
+    position: relative;
+    top: -12%;
+    left: 10%;
+}
+
+.right-noticias{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 10px;
+    color: white;
+}
+
+.right-noticias-img img{
+    width: 100%;
+    height: 60%;
+    border-radius: 10px;
+}
+
+.titulo-noticias{
+    color: white;
+    font-size: 24px;
+    display: inline;
+  
+}
+
+.noticias-section a{
+    color: grey;
+    font-size: 12px;
+    display: inline;
+    margin-left: 57%;
 }

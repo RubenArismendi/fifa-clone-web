@@ -72,9 +72,10 @@ img,button{
     display: none;
     position: absolute;
     overflow: auto;
-    background-color:#fff;
-    border-radius:5px;
-    box-shadow: 0px 10px 10px 0px rgba(0,0,0,0.4);
+    background-color:rgba(4,86,148,255);
+    box-shadow: 0px 10px 0px 1150px rgba(0,0,0,0.7);
+    width: 320px;
+    height: 580px;
 }
 
 .dropdown:hover .dropdown-options {
@@ -83,18 +84,76 @@ img,button{
 
 .dropdown-options a {
     display: block;
-    color: #000000;
+    color: white;
     padding: 5px;
     text-decoration: none;
-    padding:20px 40px;
+    padding:7.7px 40px;
+}
+.dropdown-options img{
+    width: 78px;
+    height: 30px;
+    margin-left: 33%;
+   padding-top: 11px;
 }
 
-.dropdown-options a:hover {
-    color: #0a0a23;
-    background-color: #ddd;
-    border-radius:5px;
+.mas-fifa P{
+    font-size: 12px;
+    color: grey;
+    border-bottom: 0.8px solid gray;
+    margin-bottom: 0;
+    padding-bottom: 0;
 }
         /*fin dropdown del menu*/
+
+        /*inicio dropdown inicio de sesion*/
+       
+.dropdown-iniciar-sesion {
+    display: inline-block;
+    position: relative;
+    margin-top: 11px;
+}
+
+
+.dropdown-options-iniciar-sesion {
+    display: none;
+    position: absolute;
+    overflow: auto;
+    background-color: white;
+    width: 315px;
+    height: 290px;
+    border-radius: 15px;
+    right: 0;
+}
+
+.dropdown-iniciar-sesion:hover .dropdown-options-iniciar-sesion {
+    display: block;
+}
+
+.dropdown-options-iniciar-sesion p {
+    display: block;
+    padding: 5px;
+    text-decoration: none;
+    padding:7.7px 15px;
+    font-size: 14px;
+    color: black;
+}
+
+.dropdown-options-iniciar-sesion b{
+    color: #0369c7
+}
+
+.iniciar-sesion button{
+    background-color: #0a98e3
+    width: 80%;
+    border-radius: 12PX;
+    padding-top: 6px;
+    padding-bottom: 6px
+}
+.iniciar-sesion button:hover{
+    transform: scale(1.2);
+    transition: 0.5s;
+}
+        /*fin dropdown inicio de sesion*/
 .main-container{
     display: grid;
     grid-template-columns: 33% 67%;

@@ -21,13 +21,14 @@ body{
     margin-left: 68%;
     padding-top: 5px;
     padding-bottom: 5px;
-  
 }
+
 .contenedor{
     position: fixed;
   z-index: 100;
   width: 100%;
 }
+
 .header-container a{
     color: white;
     text-decoration: none;
@@ -96,6 +97,7 @@ body{
     height: 30px;
     margin-top: 10px;
 }
+
 .menu-fifa{
     display: inline;
 }
@@ -142,6 +144,7 @@ body{
     color: white;
     font-size: 14px;
 }
+
 .left p{
     font-size: 20px;
     color: white;
@@ -152,6 +155,7 @@ body{
     margin-top: 27%;
     margin-bottom: 27%;
 }
+
 .left button{
     display: block;
     margin-top: 35px;
@@ -166,13 +170,16 @@ body{
     font-size: 12px;
     cursor: pointer;
 }
+
 .main-button{
     margin-left:18%;
     transition: 0.5s;
 }
+
 .main-button a{
     text-decoration: none;
 }
+
 .main-button:hover{
     transform: scale(1.2);
     transition: 0.5s;
@@ -182,6 +189,7 @@ body{
     font-size: 20px;
     color: white;
 }
+
 .descripcion-right{
     color: white;
     font-size: 14px;
@@ -206,6 +214,7 @@ body{
     margin-right: 35px;
     padding-top: 30px;
 }
+
 .cards-section p{
     color: white;
     font-size: 16px;
@@ -246,32 +255,40 @@ body{
 .cards{
     height: 74%;
     width: 97%;
+    transition: all 500ms ease;   
 }
 .cards img{
     border-radius: 12px;
     width: 100%;
     height: 100%;
+    transition: all 500ms ease;  
 }
 
+.cards img:hover{
+    
+    transform: scale(1.05);
+}
 .cards p{
     font-size: 14px;
 }
 /*css de cards paris 2024 hasta esta linea de codigo*/
-
 .carrusel-cards-container {
     position: relative;
     margin-top: 26px;
 }
+
 .carrusel-cards{
     position: relative;
     overflow: hidden;
     width: 100%;
     margin-top: 10px;
 }
+
 .slide-open:checked + .slide-item-1 {
     position: static;                                  
     opacity: 100;
 }
+
 .slide-item-1{
     position: absolute;
     opacity: 0;
@@ -283,7 +300,6 @@ body{
 }
 
 .slide-control {
-   
     border-radius: 50%;
     color: #428bca;
     display: none;
@@ -302,12 +318,15 @@ body{
 .slide-control.prev {
     left: 2%;
 }
+
 .slide-control.next {
     right: 2%;
 }
+
 .slide-control:hover {
     color: #3b7bb3;
 }
+
 #slide-1:checked ~ .control-1,
 #slide-2:checked ~ .control-2,
 #slide-3:checked ~ .control-3 {
@@ -323,6 +342,7 @@ body{
 .slide-circulo:hover {
     color: #aaaaaa;
 }
+
 #slide-1:checked ~ .control-1 ~ .slide-indicador 
      li:nth-child(1) .slide-circulo,
 #slide-2:checked ~ .control-2 ~ .slide-indicador 
@@ -331,6 +351,7 @@ body{
       li:nth-child(3) .slide-circulo {
     color: #428bca;
 }
+
 #titulo {
     width: 100%;
     position: absolute;
@@ -345,7 +366,6 @@ body{
          -1px 0px 2px rgba(255, 255, 255, 0);
 }
   /*fin estilos del carrusel de cards*/
-
 .noticias-section{
     margin-left: 35px;
     margin-right: 35px;
@@ -370,10 +390,19 @@ body{
     font-size: 14px;
     margin-top: 10px;
 }
+.left-noticias{
+    transition: all 500ms ease;   
+}
+
 .left-noticias img{
     width: 95%;
     height: 60%;
     border-radius: 10px;
+    transition: all 500ms ease;   
+}
+
+.left-noticias img:hover{
+    transform: scale(1.03);
 }
 
 .noticias-info{
@@ -396,12 +425,17 @@ body{
     grid-template-rows: 1fr 1fr;
     gap: 10px;
     color: white;
+    transition: all 500ms ease;  
 }
 
 .right-noticias-img img{
     width: 100%;
     height: 60%;
     border-radius: 10px;
+    transition: all 500ms ease;  
+}
+.right-noticias-img img:hover{
+    transform: scale(1.04);
 }
 
 .titulo-noticias{

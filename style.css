@@ -162,7 +162,11 @@ img,button{
     display: grid;
     grid-template-columns: 33% 67%;
 }
-
+@media(max-width:760px){
+    .main-container{
+        grid-template-columns: 1fr ;
+    }
+}
 .left-padre{
  background-image: url("https://digitalhub.fifa.com/transform/1115c341-ee46-47ff-bb24-c99c4411bea4/General-Ticketing-Promo-Box-MOB");
  background-size: cover;
@@ -376,6 +380,11 @@ img,button{
     grid-gap: 10px;
     
 }
+@media(max-width:760px){
+    .historias-destacadas{
+        grid-template-columns: 1fr ;
+    }
+}
 
 .hd-container-lef img{
      border-radius: 10px;
@@ -389,7 +398,11 @@ img,button{
     grid-template-rows:1fr 1fr;
 
 }
-
+@media(max-width:500px){
+    .hd-container-right-hijo{
+        grid-template-columns: 1fr ;
+    }
+}
 .hd-imagenes{
     width: 94%;
     height: 58%;

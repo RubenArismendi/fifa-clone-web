@@ -129,6 +129,13 @@ body{
     grid-template-columns: 33% 67%;
 }
 
+@media(max-width:760px){
+    .main-container{
+        grid-template-columns: 1fr;
+       
+    }
+}
+
 .left-padre{
     background-image: url("https://digitalhub.fifa.com/transform/3ade15f1-6bfe-4c7b-818c-b5b2f9605d33/FBSWC2024_Navy_SideHeader_DT");
     background-size: cover;
@@ -172,7 +179,8 @@ body{
 }
 
 .main-button{
-    margin-left:18%;
+    margin-left:15%;
+    margin-right: 15%;
     transition: 0.5s;
 }
 
@@ -208,7 +216,11 @@ body{
     margin-top: 10px;
     margin-bottom: 60px;
 }
-
+@media(max-width:760px){
+    .cards-section-container{
+        grid-template-columns: 1fr ;
+    }
+}
 .cards-section{
     margin-left: 35px;
     margin-right: 35px;
@@ -240,7 +252,11 @@ body{
     cursor: pointer;
     margin-bottom: 60px;
 }
-
+@media(max-width:760px){
+    .card-paris-2024{
+       width: 100%;
+    }
+}
 .card-paris-2024 img{
     width: 100%;
     height: 100%;
@@ -298,7 +314,12 @@ body{
     grid-template-columns: 1fr 1fr 1fr ;
     gap: 11px;
 }
+@media(max-width:760px){
+    .slide-item-1{
+        grid-template-columns: 1fr ;
 
+    }
+}
 .slide-control {
     border-radius: 50%;
     color: #428bca;
@@ -314,6 +335,13 @@ body{
     transform: translate(0, -50%);
     text-align: center;
     z-index: 10;
+}
+@media(max-width:760px){
+    .slide-control{
+        color: transparent;
+        font-size: 0px;
+
+    }
 }
 .slide-control.prev {
     left: 2%;
@@ -378,12 +406,21 @@ body{
     grid-template-columns: 1fr 1fr;
     margin-top: 10px;
 }
-
+@media(max-width:760px){
+    .noticias{
+        grid-template-columns: 1fr ;
+    }
+}
 .left-noticias h2{
       color: white;
       font-size: 24px;
       margin-top: 10px;
       display: inline;
+}
+@media(max-width:760px){
+    .left-noticias{
+        font-size: 12px;
+    }
 }
 .left-noticias p{
     color: white;
@@ -427,7 +464,11 @@ body{
     color: white;
     transition: all 500ms ease;  
 }
-
+@media(max-width:760px){
+    .right-noticias{
+        grid-template-columns: 1fr ;
+    }
+}
 .right-noticias-img img{
     width: 100%;
     height: 60%;
